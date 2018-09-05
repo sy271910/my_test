@@ -1,0 +1,101 @@
+.box1{
+    width: 400px;
+    height:400px;
+    border:1px solid red;
+    margin:auto;
+    position: relative;
+}
+.box1>div{
+    position: absolute;
+    opacity: 0;
+}
+.b1{
+    animation:move_b1 0.5s ease;
+    animation-fill-mode: forwards;
+    left:0;
+}
+.b2{
+    animation:move_b2 0.5s ease 1s;
+    animation-fill-mode: forwards;
+    left:15%;
+    top:43%;
+}
+.b3{
+    animation:move_b3 0.5s ease 2s;
+    animation-fill-mode: forwards;
+    left:26%;
+    top:34%;
+}
+.b4{
+    animation:move_b4 0.5s ease 3s;
+    animation-fill-mode: forwards;
+    left:26%;
+    top:28%;
+}
+.b5{
+    animation:move_b5 0.5s ease 4s;
+    animation-fill-mode: forwards;
+    left:44%;
+}
+.b6{
+    left:5%;
+    animation:move_b6 0.5s ease 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move_b6 {
+    0%{
+        bottom:0;
+    }
+    100%{
+        bottom:64%;
+        opacity: 1;
+    }
+}
+
+@keyframes move_b1{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom:18%;
+        opacity: 1;
+    }
+}
+
+@keyframes move_b2{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@keyframes move_b3{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@keyframes move_b4{
+    0%{
+        opacity: 0
+    }
+    100%{
+        opacity: 1
+    }
+}
+
+@keyframes move_b5{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom:18%;
+        opacity: 1
+    }
+}
